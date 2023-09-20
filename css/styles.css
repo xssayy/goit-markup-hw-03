@@ -221,25 +221,46 @@ nav .nav-menu .page-link:active {
   margin-bottom: 8px;
 }
 /* team-section*/
-.team-section {
+.team.section {
   background-color: #f4f4fd;
 }
 
-.team-section .section-main-title {
+.team.section .section-main-title {
   text-align: center;
+  margin-bottom: 72px;
 }
 
-.team-section .member-card {
+.team-cards-list {
+  display: flex;
+  gap: 24px;
+}
+
+.team.section .team-cards-list .member-card {
   background-color: #ffffff;
+  width: calc((100% - 3 * 24px) / 4);
+  border-radius: 0 0 4px 4px;
 }
 
-.team-section .member-card .member-photo {
+.team.section .team-cards-list .member-card .member-info {
+  padding: 32px 0;
 }
-.team-section .member-card .item-title {
+
+.team.section .team-cards-list .member-card .member-info .item-title {
+  margin-bottom: 8px;
   text-align: center;
 }
 
-.team-section .member-card .item-text {
+.team.section .team-cards-list .member-card .member-info .item-text {
+  text-align: center;
+}
+
+.team.section .member-card .member-photo {
+}
+.team.section .member-card .item-title {
+  text-align: center;
+}
+
+.team.section .member-card .item-text {
   text-align: center;
 }
 
