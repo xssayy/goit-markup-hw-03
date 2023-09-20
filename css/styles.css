@@ -41,6 +41,19 @@ img {
   margin: 0 auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .item-title {
   font-size: 20px;
   line-height: 1.2;
@@ -54,6 +67,10 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: inherit;
+}
+
+.section {
+  padding: 120px 0;
 }
 
 .section-main-title {
@@ -187,12 +204,22 @@ nav .nav-menu .page-link:active {
 }
 
 /* advantages-section */
-.advantages-section {
+.advantages {
 }
 
-.advantages-section > .adv-list {
+.advantages.section .adv-list {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
 }
 
+.advantages.section .adv-list .adv-list-item {
+  width: calc((100% - 72px) / 4);
+}
+
+.advantages.section .adv-list .adv-list-item .item-title {
+  margin-bottom: 8px;
+}
 /* team-section*/
 .team-section {
   background-color: #f4f4fd;
